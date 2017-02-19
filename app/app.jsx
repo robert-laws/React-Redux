@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
+var Main = require('Main');
+
 // Load foundation
 $(document).foundation();
 
@@ -9,7 +11,7 @@ $(document).foundation();
 require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
-  <div className="row"><h2>Boilerplate 3 ------ New Project</h2></div>,
+  <Main />,
   document.getElementById('app')
 );
 
