@@ -3,9 +3,9 @@ var UserDetails = require('UserDetails');
 var TaskList = require('TaskList');
 
 var tasks = [
-  { name: 'Write this book with love <3', completed: false },
-  { name: 'Learn isomorphic web apps', completed: false },
-  { name: 'Study FLUX architecture', completed: true }
+  { id: 1, name: 'Write this book with love <3', completed: false },
+  { id: 2, name: 'Learn isomorphic web apps', completed: false },
+  { id: 3, name: 'Study FLUX architecture', completed: true }
 ]
 
 var User = React.createClass({

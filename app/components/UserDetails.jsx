@@ -11,7 +11,7 @@ var UserDetails = React.createClass({
     userAge > 20 ? userType = <OldPerson team={team} /> : userType = <YoungPerson team={team} />;
 
     return (
-      <div>
+      <div className="green-border">
         <h3>User Details...</h3>
         <h4>Name: {name}</h4>
         <h4>Age: {age}</h4>
