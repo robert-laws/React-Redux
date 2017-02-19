@@ -4,11 +4,11 @@ var OldPerson = require('OldPerson');
 
 var UserDetails = React.createClass({
   render: function() {
-    var { name, age, date } = this.props;
-    
+    var { name, age, date, team } = this.props;
+
     var userType;
     var userAge = this.props.age;
-    userAge > 20 ? userType = <OldPerson /> : userType = <YoungPerson />;
+    userAge > 20 ? userType = <OldPerson team={team} /> : userType = <YoungPerson team={team} />;
 
     return (
       <div>

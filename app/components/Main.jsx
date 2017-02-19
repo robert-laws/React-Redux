@@ -6,7 +6,7 @@ var Main = React.createClass({
     return (
       <div className="row">
         <h1>Main Component</h1>
-        <User name="Bob Cobb" age="28" date="April 3" />
+        <User name="Bob Cobb" age="28" date="April 3" team="Development Team" />
       </div>
     )
   }
