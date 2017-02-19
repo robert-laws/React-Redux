@@ -9,7 +9,7 @@ $(document).foundation();
 require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
-  <p>Boilerplate 3 Project</p>,
+  <div className="row"><h2>Boilerplate 3 ------ New Project</h2></div>,
   document.getElementById('app')
 );
 
