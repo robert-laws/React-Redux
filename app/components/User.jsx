@@ -9,6 +9,14 @@ var tasks = [
 ]
 
 var User = React.createClass({
+  getDefaultProps() {
+    
+  },
+  getInitialState() {
+    return {
+      title: 'This is a React property'
+    }
+  },
   render: function() {
     return (
       <div>
