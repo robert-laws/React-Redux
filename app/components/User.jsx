@@ -2,19 +2,27 @@ var React = require('react');
 var UserDetails = require('UserDetails');
 var TaskList = require('TaskList');
 
-var tasks = [
-  { id: 1, name: 'Write this book with love <3', completed: false },
-  { id: 2, name: 'Learn isomorphic web apps', completed: false },
-  { id: 3, name: 'Study FLUX architecture', completed: true }
-]
-
 var User = React.createClass({
-  getDefaultProps() {
-    
+  PropTypes: {
+    firstName: React.PropTypes.string.isRequired,
+    lastName: React.PropTypes.string.isRequired,
+    score: React.PropTypes.number,
+    isMember: React.PropTypes.bool
   },
-  getInitialState() {
+  getDefaultProps: function() {
     return {
-      title: 'This is a React property'
+      score: 20,
+      isMember: true,
+      tasks: [
+        { id: 1, name: 'Go to the event', completed: false },
+        { id: 2, name: 'Meet the group', completed: true },
+        { id: 3, name: 'Write a blog post', completed: false }
+      ]
+    }
+  },
+  getInitialState: function() {
+    return {
+      isMember: this.props.isMember
     }
   },
   render: function() {
@@ -22,7 +30,7 @@ var User = React.createClass({
       <div>
         <h2>User Component</h2>
         <UserDetails {...this.props} />
-        <TaskList tasks={tasks} />
+        <TaskList tasks={this.props.tasks} isMember={this.state.isMember} />
       </div>
     )
   }
