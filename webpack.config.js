@@ -24,7 +24,8 @@ module.exports = {
     modulesDirectories: [
       'node_modules',
       './app/components',
-      './app/api'
+      './app/api',
+      './app/data'
     ],
     alias: {
       applicationStyles: 'app/styles/app.scss'
@@ -40,6 +41,11 @@ module.exports = {
 				query: {
 					presets: ['es2015', 'react', 'stage-0']
 				}
+			},
+			{
+				test: /\.json$/,
+				exclude: /(node_modules)/,
+				loader: "json-loader"
 			}
 		]
 	},

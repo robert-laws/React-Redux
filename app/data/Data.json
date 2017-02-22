@@ -1,0 +1,24 @@
+{
+	"books": [
+		{
+			"id": "1",
+			"title": "Good Book",
+			"author": "Bob Cobb"
+		},
+		{
+			"id": "2",
+			"title": "New Things",
+			"author": "Hal Hope"
+		},
+		{
+			"id": "3",
+			"title": "Interesting Items",
+			"author": "Jim Jupe"
+		},
+		{
+			"id": "4",
+			"title": "Return of Stuff",
+			"author": "Kal Kool"
+		}
+	]
+}
